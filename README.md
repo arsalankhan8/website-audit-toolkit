@@ -1,2 +1,12 @@
-# website-audit-toolkit
-A lightweight, browser-based website auditing tool that scans pages for SEO, accessibility, performance, and structural issues — with crawl control and detailed reporting.
+<!-- Paste that website-audit-test.js code into browser console,
+Press enter
+then paste this function below and add your website pages url on which you want to run the test  -->
+
+runWebsiteAudit({
+  customUrls: [
+    "https://example.com/",
+    "https://example.com/about",
+    "https://example.com/contact"
+  ],
+  maxDepth: 0 // 👈 important (prevents auto crawling)
+});
